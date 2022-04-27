@@ -1,0 +1,44 @@
+@use "../../../styles/_components" as components
+$sectionHeight: 120vh
+
+
+.container
+    position: relative
+    height: $sectionHeight
+    color: white
+
+.parallaxBanner
+    position: absolute !important
+    height: $sectionHeight
+
+.overlay
+    @include components.overlay()
+
+
+
+.fadeInContainer
+    margin-top: 20vh
+
+.header
+    margin: 0
+    font-size: 41px
+    font-family: 'Playfair Display', serif
+    white-space: nowrap
+
+.divider
+    margin: 2em 0
+    font-family: 'Playfair Display', serif
+    white-space: nowrap
+
+.linkContainer
+    margin-bottom: 2em
+
+.link
+    cursor: pointer
+    color: white
+    padding: .5em 1em
+    transition: 0.2s
+    &:hover
+        background-color: white
+        color: black
+

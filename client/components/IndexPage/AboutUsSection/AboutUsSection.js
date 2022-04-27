@@ -6,7 +6,7 @@ const AboutUsSection = () => {
     return (
         <div className={styles.container} align='center'>
             <p className={'fontSizeMd ' + styles.aboutMeHeader}>
-                О МНЕ
+                ОБО МНЕ
             </p>
             <p className={styles.divider}>
                 -

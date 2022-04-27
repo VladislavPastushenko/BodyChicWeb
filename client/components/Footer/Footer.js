@@ -1,15 +1,19 @@
-import styles from './MainPageFooterSection.module.sass'
+import styles from './Footer.module.sass'
 
 
-const MainPageFooterSection = () => {
+const Footer = () => {
     return (
         <div className={styles.container} align='center'>
             <div className={styles.headerContainer}>
                 <div className={styles.headerItem}>
-                    INSTAGRAM
+                    <a className={styles.headerItemLink}>
+                        INSTAGRAM
+                    </a>
                 </div>
                 <div className={styles.headerItem}>
-                    VKONTAKTE
+                    <a className={styles.headerItemLink}>
+                        VKONTAKTE
+                    </a>
                 </div>
             </div>
             <div className={styles.divider}>-</div>
@@ -26,4 +30,4 @@ const MainPageFooterSection = () => {
         </div>
     )
 }
-export default MainPageFooterSection
+export default Footer

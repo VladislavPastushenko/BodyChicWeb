@@ -1,4 +1,6 @@
+@use "../../../styles/_components" as components
 $sectionHeight: 120vh
+
 
 .container
     position: relative
@@ -10,26 +12,8 @@ $sectionHeight: 120vh
     height: $sectionHeight
 
 .overlay
-    position: absolute
-    background-color: #33323297
-    right: 0
-    bottom: 0
-    min-width: 100%
-    min-height: 100%
+    @include components.overlay()
 
-
-// Nav
-.navContainer
-    padding-top: 1em
-
-.navItem
-
-.navLink
-    font-size: 0.8em
-    cursor: pointer
-    color: white
-    &:hover
-        color: lightgray
 
 
 // Fade In Logo

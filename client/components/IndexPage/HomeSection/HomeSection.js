@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-grid-system';
 import FadeIn from 'react-fade-in';
 import Link from 'next/link';
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Navigator from '../../Navigator/Navigator';
 
 const HomeSection = () => {
     const transitionDuration = 1600
@@ -14,31 +15,7 @@ const HomeSection = () => {
             />
             <div className={styles.overlay}/>
 
-            <Container>
-            <Row justify='center' className={styles.navContainer}>
-                <Col lg={2} xl={2}>
-                    <div className={styles.navItem} align='center'>
-                        <a className={styles.navLink}>
-                            ГЛАВНАЯ
-                        </a>
-                    </div>
-                </Col>
-                <Col lg={2} xl={2}>
-                    <div className={styles.navItem} align='center'>
-                        <a className={styles.navLink}>
-                            САЙТ СТУДИИ
-                        </a>
-                    </div>
-                </Col>
-                <Col lg={2} xl={2}>
-                    <div className={styles.navItem} align='center'>
-                        <a className={styles.navLink}>
-                            ИНСТАГРАМ
-                        </a>
-                    </div>
-                </Col>
-            </Row>
-            </Container>
+            <Navigator/>
 
             <Container fluid className={styles.headerContainer}>
                 <Row justify='center'>
@@ -58,9 +35,11 @@ const HomeSection = () => {
                             <FadeIn delay={1000} transitionDuration={transitionDuration}>
                             <Row className={styles.buttonsContainer}>
                                 <Col xs={12} lg={6} id={styles.loveYourselfCol}>
-                                    <div className={styles.button}>
-                                        ПОЛЮБИ СЕБЯ
-                                    </div>
+                                    <Link href={'/love-yourself'}>
+                                        <div className={styles.button}>
+                                            ПОЛЮБИ СЕБЯ
+                                        </div>
+                                    </Link>
                                 </Col>
                                 <Col xs={12} lg={6} id={styles.startYourBusinessCol}>
                                     <div className={styles.button}>

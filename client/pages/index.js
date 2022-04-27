@@ -1,8 +1,7 @@
-import { useState } from "react"
-import AboutUsSection from "../components/AboutUsSection/AboutUsSection"
-import HomeSection from "../components/HomeSection/HomeSection"
-import MainPageFooterSection from "../components/MainPageFooterSection/MainPageFooterSection"
-import SecondImageSection from "../components/SecondImageSection/SecondImageSection"
+import AboutUsSection from "../components/IndexPage/AboutUsSection/AboutUsSection"
+import HomeSection from "../components/IndexPage/HomeSection/HomeSection"
+import Footer from "../components/Footer/Footer"
+import SecondImageSection from "../components/IndexPage/SecondImageSection/SecondImageSection"
 
 const Index = () => {
 
@@ -11,7 +10,7 @@ const Index = () => {
             <HomeSection/>
             <AboutUsSection/>
             <SecondImageSection/>
-            <MainPageFooterSection/>
+            <Footer/>
         </div>
     )
 }
